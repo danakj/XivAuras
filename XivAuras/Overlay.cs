@@ -7,10 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1 {
+namespace XivAuras {
     public partial class Overlay : Form {
         public Overlay() {
             InitializeComponent();
+
+            Rectangle screen_bounds = Screen.PrimaryScreen.Bounds;
+            this.Width = screen_bounds.Width;
+            this.Height = screen_bounds.Height;
         }
     }
+
+    
 }
